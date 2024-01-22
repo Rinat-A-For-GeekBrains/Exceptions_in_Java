@@ -33,7 +33,7 @@ public class Service {
         try (FileWriter writer = new FileWriter(lastName + ".txt", true);
              BufferedWriter bufferWriter = new BufferedWriter(writer);
         ) {
-
+            stringBuilder.append("\n");
             bufferWriter.write(stringBuilder.toString());
 
 
